@@ -1,0 +1,224 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('back.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Zapewniamy minimalną wysokość */
+    color: black;
+    font-family: Georgia, Garamond, serif;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    padding-top: 30px; /* Dodajemy padding-top dla navbara */
+}
+
+/* Style dla nagłówków */
+h1,
+h2,
+h3 {
+    color: #4A0000;
+}
+
+h1 {
+    position: relative;
+    left: -3vw; /* Usuwamy przesunięcie */
+    margin-top: 1vh;
+    font-size: 8vw; /* Używamy vw dla responsywności */
+    white-space: nowrap;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-family: 'Great Vibes', cursive;
+    margin-bottom: 0; /* Usuwamy margines dolny */
+}
+
+h2 {
+    padding: 2vh 0 0 0;
+    font-size: 1.2em;
+    color: black;
+    text-align: center;
+}
+
+h3 {
+    color: #4A0000;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    margin-left: 1vw;
+}
+
+h2::first-letter,
+h3::first-letter {
+    font-size: 2em;
+    font-weight: bold;
+    font-family: 'Great Vibes', cursive;
+}
+
+/* Styl dla elementu main */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+/* Styl dla content-wrapper */
+.content-wrapper {
+    background-image: url('pap.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    text-align: left;
+    padding: 2vh;
+    max-width: 50vw; /* Zwiększamy max-width */
+    min-width: auto; /* Usuwamy min-width */
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+}
+
+p {
+    margin: 1em;
+}
+
+a {
+    color: #960000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Dodatkowe style dla responsywności (przykładowe) */
+@media (max-width: 768px) {
+
+    body {
+ 
+        font-size: 0.700em;
+    }
+
+    .content-wrapper {
+        padding: 1vw;
+    }
+}
+
+@media (max-width: 420px) {
+        .navbar{
+        display:none;
+    }
+    body {
+        padding-top:0px;
+    }
+}
+/* Styl dla ufoludka */
+.ufoludek {
+    position: absolute; /* Zmieniamy na absolute */
+    top: 25vh; /* Ustawiamy top */
+    left: 100%; /* Ustawiamy left */
+    width: 15%; /* Zwiększamy rozmiar */
+    rotate: 20deg;
+    height: auto;
+    transform: translateX(-50%); /* Centrujemy obrazek */
+}
+
+.akapit-prawo {
+    text-align: left; /* Zmieniamy na left */
+    margin-left: 10%; /* Dostosowujemy margines */
+    margin-right: 10%; /* Dodajemy margines z prawej strony */
+    max-width: 80%; /* Dostosowujemy max-width */
+}
+
+footer {
+    color: white;
+}
+
+.ufo {
+    position: absolute;
+    left: -1vw; /* Stała wartość w pikselach - zawsze ta sama odległość od lewej */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 25vw; /* Stały rozmiar w pikselach */
+    height: 25vw; /* Stały rozmiar w pikselach */
+    rotate: 0deg;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    transition: opacity 1s ease;
+}
+.ufo:hover{
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+.ufo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.ufo h3 {
+    position: absolute;
+    bottom: -30px; /* Umieść tekst pod obrazkiem */
+    font-size: 14px; /* Stały rozmiar czcionki */
+    text-align: center;
+    white-space: nowrap;
+    rotate: 10deg;
+}
+
+.ufo li {
+    font-size: 15px;
+    color: #4A0000;
+    rotate: 10deg;
+}
+
+
+
+section p:first-of-type {
+    text-align: left;
+    margin-left: 10%; /* Dostosowujemy margines */
+    margin-right: 10%; /* Dodajemy margines z prawej strony */
+}
+
+/* Styl dla paska nawigacji */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    padding: 0.5rem 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: padding 0.3s ease;
+}
+.navbar:hover {
+    padding: 1.5rem 0; /* Zwiększamy padding po najechaniu */
+    transition: padding 0.3s ease;
+}
+.navbar nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.navbar nav ul li {
+    margin: 0;
+}
+
+.navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+    color: #4A0000;
+}
