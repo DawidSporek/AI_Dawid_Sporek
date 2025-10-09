@@ -7,16 +7,16 @@ body {
     background-image: url('back.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 100vh; /* Zapewniamy minimalną wysokość */
+    min-height: 100vh;
     color: black;
     font-family: Georgia, Garamond, serif;
     font-size: 1em;
     margin: 0;
     padding: 0;
-    padding-top: 30px; /* Dodajemy padding-top dla navbara */
+    padding-top: 30px; 
 }
 
-/* Style dla nagłówków */
+
 h1,
 h2,
 h3 {
@@ -25,14 +25,14 @@ h3 {
 
 h1 {
     position: relative;
-    left: -3vw; /* Usuwamy przesunięcie */
+    left: -3vw; 
     margin-top: 1vh;
-    font-size: 8vw; /* Używamy vw dla responsywności */
+    font-size: 8vw; 
     white-space: nowrap;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-family: 'Great Vibes', cursive;
-    margin-bottom: 0; /* Usuwamy margines dolny */
+    margin-bottom: 0; 
 }
 
 h2 {
@@ -56,7 +56,6 @@ h3::first-letter {
     font-family: 'Great Vibes', cursive;
 }
 
-/* Styl dla elementu main */
 main {
     display: flex;
     justify-content: center;
@@ -64,7 +63,6 @@ main {
     min-height: 100vh;
 }
 
-/* Styl dla content-wrapper */
 .content-wrapper {
     background-image: url('pap.jpg');
     background-size: cover;
@@ -72,8 +70,8 @@ main {
     background-color: transparent;
     text-align: left;
     padding: 2vh;
-    max-width: 50vw; /* Zwiększamy max-width */
-    min-width: auto; /* Usuwamy min-width */
+    max-width: 50vw; 
+    min-width: auto; 
     width: 100%;
     position: relative;
     box-sizing: border-box;
@@ -93,7 +91,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Dodatkowe style dla responsywności (przykładowe) */
 @media (max-width: 768px) {
 
     body {
@@ -114,22 +111,22 @@ a:hover {
         padding-top:0px;
     }
 }
-/* Styl dla ufoludka */
+
 .ufoludek {
-    position: absolute; /* Zmieniamy na absolute */
-    top: 25vh; /* Ustawiamy top */
-    left: 100%; /* Ustawiamy left */
-    width: 15%; /* Zwiększamy rozmiar */
+    position: absolute; 
+    top: 25vh; 
+    left: 100%; 
+    width: 15%; 
     rotate: 20deg;
     height: auto;
-    transform: translateX(-50%); /* Centrujemy obrazek */
+    transform: translateX(-50%); 
 }
 
 .akapit-prawo {
-    text-align: left; /* Zmieniamy na left */
-    margin-left: 10%; /* Dostosowujemy margines */
-    margin-right: 10%; /* Dodajemy margines z prawej strony */
-    max-width: 80%; /* Dostosowujemy max-width */
+    text-align: left;
+    margin-left: 10%; 
+    margin-right: 10%; 
+    max-width: 80%; /
 }
 
 footer {
@@ -138,11 +135,11 @@ footer {
 
 .ufo {
     position: absolute;
-    left: -1vw; /* Stała wartość w pikselach - zawsze ta sama odległość od lewej */
+    left: -1vw; 
     top: 50%;
     transform: translateY(-50%);
-    width: 25vw; /* Stały rozmiar w pikselach */
-    height: 25vw; /* Stały rozmiar w pikselach */
+    width: 25vw; 
+    height: 25vw; 
     rotate: 0deg;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -161,8 +158,8 @@ footer {
 
 .ufo h3 {
     position: absolute;
-    bottom: -30px; /* Umieść tekst pod obrazkiem */
-    font-size: 14px; /* Stały rozmiar czcionki */
+    bottom: -30px; 
+    font-size: 14px; 
     text-align: center;
     white-space: nowrap;
     rotate: 10deg;
@@ -178,11 +175,11 @@ footer {
 
 section p:first-of-type {
     text-align: left;
-    margin-left: 10%; /* Dostosowujemy margines */
-    margin-right: 10%; /* Dodajemy margines z prawej strony */
+    margin-left: 10%; 
+    margin-right: 10%; 
 }
 
-/* Styl dla paska nawigacji */
+
 .navbar {
     position: fixed;
     top: 0;
@@ -195,7 +192,7 @@ section p:first-of-type {
     transition: padding 0.3s ease;
 }
 .navbar:hover {
-    padding: 1.5rem 0; /* Zwiększamy padding po najechaniu */
+    padding: 1.5rem 0; 
     transition: padding 0.3s ease;
 }
 .navbar nav ul {
