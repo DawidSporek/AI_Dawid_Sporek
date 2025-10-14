@@ -4,6 +4,7 @@ html {
     width:100%;
     height:100%;
     background-color: rgb(159, 212, 212);
+
 }
 body {
     width: 100%;
@@ -12,17 +13,20 @@ body {
     padding: 0;
         display: flex;
     flex-direction: column;
-    
+
 }
 main{
     flex:1;
-}
+}   
 footer{
-    color:white;
-    background-color: black;
+    color:black;
+    background-color: white;
     padding:0;
     margin:0;
     text-align: center;
+    font-weight: bold;
+    border-style: dashed;
+    border-color:yellowgreen;
     
 }
 h1{
@@ -31,6 +35,8 @@ h1{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     -webkit-text-stroke: 2px black;
     text-stroke: 2px black;
+    border-style: dashed;
+    border-color:yellowgreen;
 }
 .content-wrapper {
     background-image: url('ice.jpg');
@@ -47,6 +53,8 @@ h1{
     
     margin-bottom: 0;
     border-right: 5px solid black;
+    border-style: dashed;
+    border-color:yellowgreen;
 }
 .ufo{
     position: fixed;
@@ -55,6 +63,8 @@ h1{
     width: 35%; 
     height: 35%;
     z-index: 1001;
+    border-style: dashed;
+    border-color:yellowgreen;
 }
 .ufo img {
     width: 100%;
@@ -70,6 +80,8 @@ h1{
     z-index: 100;
     filter: brightness(0.8) sepia(100%) hue-rotate(180deg) saturate(300%);
     animation: flyToUfo 10s ease-in-out infinite; 
+    border-style: dashed;
+    border-color:yellowgreen;
 }
 
 @keyframes flyToUfo {
@@ -100,6 +112,8 @@ h1{
     z-index: 1000;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.514);
     transition: padding 0.3s ease;
+    border-style: dashed;
+    border-color:yellowgreen;
 }
 .navbar:hover {
     padding: 1.5rem 0; 
@@ -158,6 +172,8 @@ h2 {
     color: #fff;
     text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 40px #00d4ff, 0 0 80px #00d4ff, 0 0 160px #00d4ff;
     animation: glow 1.5s infinite alternate;
+    border-style: dashed;
+    border-color:yellowgreen;
 }
 
 
@@ -166,9 +182,23 @@ h3{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    border-style: dashed;
+    border-color:yellowgreen;
 
 }
 ul li{
+    color:aquamarine;
     text-align: left;
     list-style-type: decimal;
+    text-shadow: 1px 1px 2px black;
+    font-weight: bold;
+    border-style: dashed;
+    border-color:yellowgreen;
+}
+p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:aquamarine;
+    text-shadow: 1px 1px 2px black;
+    border-style: dashed;
+    border-color:yellowgreen;
 }
