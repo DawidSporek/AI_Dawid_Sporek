@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+    margin-bottom: 1px; 
+}
+
+li.completed {
+    background-color: #e0ffe0;
+    text-decoration: line-through;
+}
+
+input[type="checkbox"] {
+    width:auto;
+    margin-right: 5px;;
+    gap:1px;
+}
+
+#dol {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: nowrap; 
+}
+
+input, button {
+   
+    font-size: 14px;
+    
+    border: 1px solid #ccc;
+    width: 100%;
+   
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border: none;
+    max-width: 100px; 
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+form {
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
+    padding: 15px;
+    background-color: antiquewhite;
+}
+mark {
+    background-color: #ff0;
+    color: #000;
+    padding: 0 4px;
+}
+#search {
+    width: 95.6%; 
+    padding-left: 40px; 
+    font-size: 14px;
+    border: 1px solid #ccc;
+    padding-top:8px;
+    padding-bottom:8px;
+}
+
+#task,#due-date,#sumbicik{
+    padding:8px;
+
+}
+.search-container {
+    position: relative; 
+    width: 100%; 
+}
+.search-icon {
+    position: absolute;
+    left: 10px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    font-size: 18px; 
+    color: #888; 
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+    margin-bottom: 1px; 
+}
+
+.task-content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex: 1;
+    overflow: hidden;
+}
+
+.task-content span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.task-controls {
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.delete-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 6px;
+    line-height: 1;
+    color: #d00;
+}
+
+.delete-btn:hover {
+    background: rgba(208,0,0,0.08);
+    border-radius: 4px;
+}
+
+.edit-input {
+    font-size: 14px;
+    padding: 6px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
