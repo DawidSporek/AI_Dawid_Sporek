@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB3</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-image/leaflet-image.js"></script>
+    <link rel="stylesheet" href="styles.css"> 
+    <script src="skrypt.js"></script>
+
+    <div id="tabele">
+        <table>
+            <tr>
+                <td>
+                    <div id="map"></div>
+                    <button id="lokalizacjaBtn" onclick="mojeLokalizacja()">Moja Lokalizacja</button>
+                    <button id="pobierzMapeBtn" onclick="pobierzMape()">Pobierz Mapę</button>
+                </td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <td>
+                    <div id="rastrowe">
+                    </div>
+                </td>
+            </tr>
+        </table>
+        
+        <table id="rastrowe_podzielone">
+
+        </table>
+        
+        <table id="ulozone">
+
+        </table>         
+    </div>
+</body>
+</html>
