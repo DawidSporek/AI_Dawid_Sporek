@@ -1,0 +1,187 @@
+html {
+    margin: 0;
+    padding: 0;
+    width:100%;
+    height:100%;
+    background-color: rgb(159, 212, 212);
+
+}
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+        display: flex;
+    flex-direction: column;
+
+}
+main{
+    flex:1;
+}   
+footer{
+    color:black;
+    background-color: white;
+    padding:0;
+    margin:0;
+    text-align: center;
+    font-weight: bold;
+
+    
+}
+h1{
+    color:white;
+    font-size:5vw;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    -webkit-text-stroke: 2px black;
+    
+}
+.content-wrapper {
+    background-image: url('ice.jpg');
+    text-align: center;
+    height: 100%;
+    
+    height: auto;
+    width: 60%;
+    position:relative;
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 1vw;
+    
+    margin-bottom: 0;
+    border-right: 5px solid black;
+
+}
+.ufo{
+    position: fixed;
+    top: 20vh; 
+    left: 65%; 
+    width: 35%; 
+    height: 35%;
+    z-index: 1001;
+
+}
+.ufo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.ufoludek{
+    position: fixed;
+    top: 55vh;
+    left: 75%;
+    width: 15%;
+    height: auto;
+    z-index: 100;
+    filter: brightness(0.8) sepia(100%) hue-rotate(180deg) saturate(300%);
+    animation: flyToUfo 10s ease-in-out infinite; 
+}
+
+@keyframes flyToUfo {
+    0%, 100% {
+        top: 55vh;
+        left: 75%;
+        width: 15%;
+        opacity: 1;
+        transform: rotate(0deg) scale(1);
+    }
+    
+    50% {
+        top: 35vh;
+        left: 80%;
+        width: 5%;
+        opacity: 0;
+        transform: rotate(720deg) scale(0.3);
+    }
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 60%;
+    width: 40%;
+    background-color: white;
+    padding: 0.5rem 0;
+    z-index: 1000;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.514);
+    transition: padding 0.3s ease;
+}
+.navbar:hover {
+    padding: 1.5rem 0; 
+    transition: padding 0.3s ease;
+}
+.navbar nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.navbar nav ul li {
+    margin: 0;
+    color:white;
+}
+
+.navbar nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1vw;
+    transition: color 0.3s ease;
+}
+
+.navbar nav ul li a:hover {
+    color: rgb(159, 212, 212);
+}
+
+@media (max-width: 768px) {
+
+    body {
+ 
+        font-size: 0.700em;
+    }
+
+    .content-wrapper {
+        padding: 1vw;
+    }
+}
+
+@media (max-width: 620px) {
+        .navbar{
+        display:none;
+    }
+    body {
+        padding-top:0px;
+    }
+}
+
+h2 {
+   
+    font-size: 1.5rem;
+    color: #fff;
+    text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 40px #00d4ff, 0 0 80px #00d4ff, 0 0 160px #00d4ff;
+    animation: glow 1.5s infinite alternate;
+}
+
+
+h3{
+    background: linear-gradient(to right, #000000, #556bce, #ff0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+}
+ul li{
+    color:aquamarine;
+    text-align: left;
+    list-style-type: decimal;
+    text-shadow: 1px 1px 2px black;
+    font-weight: bold;
+}
+p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:aquamarine;
+    text-shadow: 1px 1px 2px black;
+}
